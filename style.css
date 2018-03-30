@@ -1,28 +1,66 @@
 * {
   padding: 0 auto;
-  margin: 0auto;
+  margin: 0 auto;
 }
 
 html,
 body {
   padding: 0 auto;
   margin: 0 auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   width: 100%;
   height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.contenu {
+  width: 100%;
+  height: 100%;
+  background-color: #252523;
+  background-image: url("https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/LPICrc65HmAfstV/toronto");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1000px 1000px;
+}
+.back {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /*   background: rgba(255, 255, 255, 0.4);
+ */
+}
+
+main .contenu .back img {
+  width: 250px;
+  display: block;
+  transform: rotate(90deg);
+  margin-left: auto;
+  margin-right: auto;
 }
 header {
   height: 100px;
   width: 100%;
-  background-color: black;
+  /*   background: rgb(167, 157, 157, 0.5);
+ */
+  display: flex;
+}
+
+header .header-color {
+  height: 100px;
+  width: 100%;
   color: white;
   display: flex;
 }
 
-header img {
+main .contenu .back header .header-color img {
   width: 100px;
   height: 100px;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-top: 1px;
 }
 
 header ul {
@@ -36,58 +74,51 @@ header ul li {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.6em;
-  width: 30%;
+  margin-left: 9%;
   padding-top: 1%;
+  color: white;
 }
-header ul li:hover {
-  color: yellow;
+.plus {
+  display: none;
 }
-
-.contenu {
-  width: 100%;
-  height: 100%;
-  background-image: url("https://cdn.pixabay.com/photo/2014/12/15/17/16/pier-569314_960_720.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.back {
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4);
-}
-
-main img {
-  width: 250px;
-  height: 250px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 30px;
-}
-
 main h1 {
   width: 100%;
   display: block;
   text-align: center;
-  color: brown;
+  color: rgb(152, 202, 196);
   margin-bottom: 2%;
-  margin-top: 2%;
-  font-size: 2.5em;
+  margin-top: 10%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 9em;
+}
+
+main h2 {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 3em;
+  text-align: center;
+  color: white;
+}
+main .back-p {
+  /*   background-color: #a49b92;
+ */
+  background: rgba(169, 255, 245, 0.342);
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  box-shadow: 2px 2px 5px rgb(83, 83, 83);
 }
 
 main p {
-  width: 80%;
-  display: block;
   text-align: center;
-  color: brown;
+  color: #fffcec;
+  margin-bottom: 1%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.2em;
+  padding: 1%;
+  font-weight: bold;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3%;
-  border-radius: 1%;
-  font-size: 1.2em;
-  background-color: white;
-  box-shadow: 2px 2px 5px black;
+  width: 50%;
 }
 
 main button {
@@ -96,64 +127,52 @@ main button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid black;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.8em;
   font-weight: bold;
-  border-radius: 4%;
-  box-shadow: 2px 2px 2px black;
-  color: brown;
-  background-color: white;
-  margin-bottom: 3%;
+  box-shadow: 2px 2px 2px rgb(78, 78, 78);
+  background-color: #526f6b;
+  margin-bottom: 2%;
+  margin-top: 3%;
 }
 
 main button a {
   text-decoration: none;
-  color: brown;
+  color: #fffcec;
 }
 
 footer {
   width: 100%;
-  background-color: black;
+  height: 234px;
+  background-color: #252523;
   color: white;
 }
 footer .icons {
   display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 .icons a {
   display: flex;
   width: 100%;
-  height: 100;
+  height: 100%;
   color: white;
-}
-
-.icons a:hover {
-  color: yellow;
 }
 
 .icons a .fa-3x {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 footer p {
   margin: 0;
   width: 100%;
   text-align: center;
-  padding-top: 1%;
-  padding-bottom: 1.5%;
+  background-color: #252523;
 }
 @media screen and (max-width: 900px) {
   header {
     display: none;
-  }
-  main button {
-    margin-top: 7%;
-  }
-  footer .icons {
-    padding-top: 2%;
-  }
-  footer p {
-    padding-top: 5%;
   }
 }

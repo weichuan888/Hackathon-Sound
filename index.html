@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hackoustic</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat:700|Nothing+You+Could+Do|Roboto+Condensed"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
         crossorigin="anonymous"></script>
@@ -15,59 +16,67 @@
 </head>
 
 <body>
-    <header>
-        <img src="img/b2s-logo.png" alt="logo">
-        <ul>
-            <li>Who we are</li>
-            <li>Test Me</li>
-            <li>Contact</li>
-        </ul>
-    </header>
     <main>
-        <div class="contenu">
-            <div class="back">
-                <img src="img/b2s-logo.png" alt="logo">
-                <h1>SoundWorld</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur error ipsam ea in sunt deserunt, aliquid
-                    nisi dicta quod eos distinctio animi, temporibus recusandae maiores repudiandae aliquam porro voluptatem
-                    delectus voluptatum, quod eos distinctio animi, temporibus recusandae maiores repudiandae aliquam porro
-                    so voluptatem delectus voluptatum, quod eos distinctio animi, temporibus recusandae maiores repudiandae
-                    aliquam porro voluptatem delectus voluptatum, quod eos distinctio animi, temporibus recusandae maiores
-                    repudiandae aliquam porro voluptatem delectus voluptatum, non adipisci aut sint! Cum tenetur nemo fugit
-                    ipsum, libero sit vitae sapiente nulla, harum labore optio porro praesentium!
-                </p>
+        <div class="wrapper" role="website">
+            <div class="contenu" title="contenu-du-website">
+                <div class="back" role="couleur-de-fond">
+                    <header title="en-tete" role="information-de-base">
+                        <div class="header-color">
+                            <img src="img/b2s-logo.png" alt="logo" title="FOLLOWit" role="logo">
+                            <ul>
+                                <li class="li-un" onClick="More()" title="What we do" role="Description">What we do</li>
+                                <div class="plus">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ex.</p>
+                                </div>
+                                <li class="li-deux" onClick="More()" title="Download" role="link download">Try Me</li>
+                                <div class="plus">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ex.</p>
+                                </div>
+                                <li class="li-trois" onclick="More()" title="Contact" role="join-information">Contact</li>
+                                <div class="plus">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ex.</p>
+                                </div>
+                            </ul>
+                        </div>
+                    </header>
+                    <!--                 <img src="img/b2s-logo.png" alt="logo">
+             -->
+                    <h1 title="FOLLOWit" role="Website's Name">FOLLOWit</h1>
+                    <h2 title="where the sound brings you" role="slogan">where the sound brings you</h2>
+                    <!-- <div class="back-p">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur error ipsam ea in sunt deserunt, aliquid nisi dicta quod
+                            eos din adipisci aut sint! Cum tenetur nemo fugit ipsum, libero sit vitae sapiente nulla, harum
+                            labore optio porro praesentium!
+                        </p>
+                    </div> -->
+                </div>
                 <button>
-                    <a href="#"> Download</a>
+                    <a href="#" alt="lien telechargement"> Download</a>
                 </button>
             </div>
-
         </div>
     </main>
     <footer>
-        <div class="icons">
-
-
-            <a href="#">
+        <div class="icons" title="icons" role="link to follow our news">
+            <a href="#" title="facebook" role="link to facebook">
                 <i class="fab fa-facebook fa-3x"></i>
             </a>
-
-            <a href="#">
+            <a href="#" title="twitter" role="link to twitter">
                 <i class="fab fa-twitter-square fa-3x"></i>
             </a>
             </i>
-            <a href="">
+            <a href="" title="mail" role="link to mail">
                 <i class="fas fa-envelope fa-3x"></i>
             </a>
-
         </div>
-
-        <p>
-
-            Lorecmet consecteturor sit amet consecteturor sit amet consecteturor sit amet consectetur adipisicing elit. Eius, vitae vel?
-
+        <p title="Team worker names" role="text">
+            Make by alixe boumeridja, Elisa della Faille, Weichuan Tran, Cali Armut and Nicolay Yadrychnikov
+            <br/>BECODE
         </p>
-
     </footer>
+    <script src="scripts.js"></script>
+
 </body>
 
 </html>
